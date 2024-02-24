@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+#menu {
+  background-color: rgb(199, 19, 19);
+  width: 100%;
+}
+#menu li {
+  /* float: left; */
+  display: flex;
+  align-items: center;
+  /* height: 40px; */
+  /* line-height: 40p; */
+}
+#menu ul {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  width: 100% !important;
+}
+#menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+#menu ul li a:hover {
+  background-color: rgb(255, 230, 0);
+  color: #0c0a0a;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+img {
+  width: 13vw;
+  height: 30vh;
+}
+footer {
+  padding: 100px;
+  background-color: yellow;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.products {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+.flex-item {
+  text-align: center;
+  width: 250px;
+  /* height: 450px; */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 7px;
+}
+.flex-item > img {
+  width: 100%;
+  height: 250px;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.slides {
+  margin-top: 20px;
+  width: 1000px;
+  object-fit: cover;
+}
+
+.flex-item > .btn-buy {
+  text-align: center;
+  display: inline-block;
+  background-color: red;
+  text-decoration: none;
+  width: 100%;
+  color: #fff;
+  padding: 6px 0px 6px 0px;
+  border-radius: 7px;
+}

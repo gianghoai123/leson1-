@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nhập thông tin</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+
+  <body>
+    <a href="bandotrangtritet.html">Trang chủ</a>
+    <form>
+      <div class="container">
+        <h1>Đăng ký</h1>
+        <div>
+          <label for="email"><b>Họ và tên:</b></label>
+          <input
+            type="text"
+            placeholder="họ và tên"
+            name="Họ và tên"
+            id="email"
+            required
+          />
+        </div>
+        <br />
+        <label for="tuoi">Tuổi:</label>
+        <input
+          type="text"
+          placeholder="Nhập vào tuổi của bạn"
+          id="tuoi"
+          name="tuoi"
+        /><br /><br />
+        <label for="sodienthoai">Số điện thoại:</label>
+        <input
+          type="number"
+          id="sodienthoai"
+          placeholder="Nhập vào số điện thoại của bạn"
+          name="sodienthoai"
+        /><br /><br />
+
+        <label for="gioitinh">Giới tính:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Nữ</label>
+        <p style="text-align: center">
+          By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>.
+        </p>
+        <button class="btn-submit" type="button" onclick="dieu_huong()">
+          Đăng ký
+        </button>
+      </div>
+    </form>
+    <script src="register.js"></script>
+  </body>
+</html>
